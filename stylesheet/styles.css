@@ -224,18 +224,24 @@ footer {
             box-sizing: inherit;
   }
   body {
-    width: 500px !important;
+    width: 100% !important;
     margin: 0;
     margin-left: -150px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
   }
   body * {
     -webkit-box-flex: 0 !important;
         -ms-flex: 0 1 50% !important;
             flex: 0 1 50% !important;
     font-size: inherit;
+  }
+  .article4 div {
+    margin-right: 2rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

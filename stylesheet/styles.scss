@@ -179,13 +179,17 @@ display: flex;
     box-sizing: inherit;
 }
 body{
-    width: 500px !important;
+    width: 100% !important;
     margin: 0;
     margin-left: -150px;
     display: flex;
+    flex: 0 1 auto;
     *{
         flex: 0 1 50% !important;
         font-size: inherit;
     }
+}
+.article4 div{
+    margin-right: 2rem;
 }
 }
