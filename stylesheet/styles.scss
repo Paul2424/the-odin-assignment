@@ -99,6 +99,7 @@ h2{
     }
 }
 figure p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     color: #666769;
 }
@@ -170,13 +171,21 @@ footer{
     font-size: 0.9rem;
 }
 
-@media screen and (max-width:900px){
-html{box-sizing: border-box;}
+@media only screen and (max-width:900px){
+html{box-sizing: border-box;
+display: flex;
+}
 *,*::after,*::before{
     box-sizing: inherit;
 }
 body{
-    min-width: 100%;
+    width: 500px !important;
     margin: 0;
+    margin-left: -150px;
+    display: flex;
+    *{
+        flex: 0 1 50% !important;
+        font-size: inherit;
+    }
 }
 }
