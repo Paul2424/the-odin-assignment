@@ -12,4 +12,52 @@ html {
   margin: 0;
   padding: 0;
 }
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 1rem 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+    background: #1f2937;
+  }
+  header .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .top h3 {
+    font-size: 0.8rem;
+    color: #f9faf8;
+  }
+  header .top nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+  header .top nav > ul a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-size: 0.563rem;
+  }
+  header .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -8,3 +8,46 @@ html{
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 900px){
+    @mixin bodypad {
+        padding: 1rem 4rem;
+    }
+    body{
+        
+    }
+    header{
+        @include bodypad();
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background: #1f2937;
+
+        .top{
+            display: flex;
+            justify-content: space-between;
+
+            h3{
+                font-size: 0.8rem;
+                color: #f9faf8;
+            }
+            nav>ul{
+                display: flex;
+                list-style: none;
+                gap: 1rem;
+
+                a{
+                    text-decoration: none;
+                    color: #e5e7eb;
+                    font-size: 0.563rem;
+                }
+            }
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+
+    }
+    
+}
