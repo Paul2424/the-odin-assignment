@@ -174,7 +174,7 @@ footer{
 @media only screen and (max-width:900px){
 html{box-sizing: border-box;
 display: flex;
-transform: scale(0.5) !important;
+//transform: scale(0.5) !important;
 }
 *,*::after,*::before{
     box-sizing: inherit;
