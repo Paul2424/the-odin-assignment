@@ -1,3 +1,10 @@
+$colorwhite: #f9faf8;
+$colordark: #1f2937;
+$colorwhtvar: #e5e7eb;
+$font18: 1.125rem;
+$font24: 1.5rem;
+$font36: 2.25rem;
+$font48: 3rem;
 html{
     box-sizing: border-box;
 }
@@ -8,46 +15,168 @@ html{
     margin: 0;
     padding: 0;
 }
-@media screen and (max-width: 900px){
-    @mixin bodypad {
-        padding: 1rem 4rem;
-    }
-    body{
+
+html{
+    box-sizing: border-box;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+%pad{
+    padding: 1rem 8rem 5rem;
+}
+body{
+    padding: 0 8rem;
+    background: #000
+}
+.article1{
+    @extend %pad;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: $colordark;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        h3{
+          font-size:  1.25rem;
+          color: $colorwhite;
+        }
+
+            a{
+                color:$colorwhtvar;
+                text-decoration: none;
+                margin-left: 1rem;
+            }
         
     }
-    header{
-        @include bodypad();
+    .bottom{
         display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        background: #1f2937;
+        justify-content: space-between;
+        margin-top: 4.5rem;
+        gap: 2.5rem;
 
-        .top{
-            display: flex;
-            justify-content: space-between;
-
-            h3{
-                font-size: 0.8rem;
-                color: #f9faf8;
-            }
-            nav>ul{
-                display: flex;
-                list-style: none;
-                gap: 1rem;
-
-                a{
-                    text-decoration: none;
-                    color: #e5e7eb;
-                    font-size: 0.563rem;
-                }
-            }
+        h1{
+            font-size: 3rem;
+            color: $colorwhite;
+            font-weight: bolder;
         }
-        .bottom{
-            display: flex;
-            justify-content: space-between;
-            gap: 2rem;
+        p{
+            font-size: $font18;
+            color: $colorwhtvar;
         }
 
+        button{
+            margin-top: 0.5rem;
+            padding: 6px 16px;
+            border-radius: 4px;
+            border-style: none;
+            color: $colorwhite;
+            background: rgb(0, 103, 238);
+            font-weight: bold;
+        }
     }
+}
+.article2{
+@extend %pad;
+background: $colorwhite;
+
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    color: $colordark;
+    font-size: $font36;
+}
+.figure-container{
+    display: flex;
+    padding: auto 3rem !important;
+    //border: 1px solid red;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+    figure{
+        flex: 0 1 10rem;
+    }
+}
+figure p{
+    text-align: center;
+    color: #666769;
+}
+
+figure img{
+    width: 10rem;
+    height: 9.375rem;
+    border-radius: 4px;
+    object-fit: cover;
     
+}
+}
+.article3{
+    padding: 4rem 5.5rem;
+    background: $colorwhtvar;
+    section{
+        max-width: 71.5%;
+        margin: 0 auto;
+        p{
+            //padding: 0 1.5rem;
+            font-size: $font36;
+            font-style: italic;
+            font-weight: 2px;
+            font-family: Sofia;
+            color: $colordark;
+            line-height: 1.2em;
+            margin-bottom: 2.5rem;
+        }
+        h4{
+            text-align: right;
+           
+        }
+    }
+}
+.article4{
+    background: $colorwhite;
+    padding: 5rem 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    section{
+        display: flex;
+        padding: 3rem auto auto;
+        justify-content: space-between;
+        padding: 3rem 8rem;
+        background: #3882f6;
+        border-radius: 5px;
+        h3{
+            color: $colorwhite;
+            font-size: 1rem;
+        }
+        }
+        p{
+            color: $colorwhtvar;
+            font-size: 0.9rem;
+        }
+        button{
+            padding: 0.5rem 2rem;
+            border: 2px solid $colorwhite;
+            border-radius: 5px;
+            background: transparent;
+            color: $colorwhite;
+        }
+    }
+footer{
+    text-align: center;
+    color: $colorwhtvar;
+    background: $colordark;
+    padding: 2rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width:900px){
+html{box-sizing: border-box;}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+    min-width: 100%;
+    margin: 0;
+}
 }
