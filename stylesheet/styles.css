@@ -218,8 +218,8 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: scale(1) !important;
-            transform: scale(1) !important;
+    -webkit-transform: scaleX(0.5) !important;
+            transform: scaleX(0.5) !important;
   }
   *, *::after, *::before {
     -webkit-box-sizing: inherit;
