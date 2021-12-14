@@ -218,8 +218,6 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transform: scaleX(1) !important;
-            transform: scaleX(1) !important;
   }
   *, *::after, *::before {
     -webkit-box-sizing: inherit;
